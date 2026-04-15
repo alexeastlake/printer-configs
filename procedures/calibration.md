@@ -2,25 +2,15 @@
 
 Calibration runs, recorded per nozzle × filament combination. All calibrations below were done with OrcaSlicer's built-in calibration tools.
 
-## Which Calibrations Depend on What
-
-| Calibration | Depends on | Rerun when… |
-|---|---|---|
-| Temp tower | Filament | Switching to a new filament brand/type |
-| Flow ratio | Filament (mostly) | Switching to a new filament brand/type |
-| Pressure advance | Filament **and** nozzle | Switching filament OR swapping nozzle |
-| Retraction | Filament **and** nozzle | Switching filament OR swapping nozzle |
-
-**Practical consequence:** when swapping nozzles, you can likely keep temp and flow from the previous calibration. You need to redo PA and retraction.
-
 ## Standard Workflow (New Filament or Nozzle)
 
-1. **Temp tower** - find the lowest temp that still bridges cleanly without stringing.
-2. **Flow ratio** - tune extrusion volume.
-3. **Pressure advance** - reduce corner bulging and seam artifacts.
-4. **Retraction** - minimize stringing on travel moves.
-5. Record results in the matching filament file (and update the nozzle file's summary table).
-6. Export the OrcaSlicer profile to [`../profiles/`](../profiles/).
+1. **Nozzle Temperature Tower**
+2. **Max Volumetric Speed**
+3. **Pressure Advance**
+4. **Flow Ratio**
+5. **Retraction**
+6. Record results in the matching filament file (and update the nozzle file's summary table).
+7. Export the OrcaSlicer profile to [`../profiles/`](../profiles/).
 
 ---
 
@@ -44,6 +34,7 @@ Tool: OrcaSlicer 2.3.2 built-in calibration.
 - **Flow rate:** Pass 1 blocks looked virtually identical. Settled on 0.98, pass 2 skipped.
 - **Pressure advance:** PA Line method, 0-0.1 range at 0.002 step. Lines from 0.08+ were complete end to end; picked 0.09.
 - **Retraction:** 0-2 mm in 0.1 mm steps. Heavy stringing below 0.4 mm, cleanest 0.8-1.2 mm, slight return above 1.5 mm. Picked 1.0 mm at 35 mm/s.
+- **Max volumetric flow:** 5–20 mm³/s range, 1 mm³/s steps. Defects started at 1 cm height (0.9 mm measurement), slicer reported 14.06 mm³/s at that point. Took ~15% safety margin — **12 mm³/s**.
 
 Final values recorded in [`../filaments/pla-plus-creality-black.md`](../filaments/pla-plus-creality-black.md).
 

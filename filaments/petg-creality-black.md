@@ -1,6 +1,6 @@
 # Creality CR-PETG - Black
 
-## Basics
+## Info
 
 | | |
 |---|---|
@@ -9,17 +9,16 @@
 | **Diameter** | 1.75 mm |
 | **Color** | Black |
 
-## Temps
-
-Not yet calibrated. Typical PETG range: nozzle 230-250°C, bed 70-80°C.
-
-## Calibrated Values - 0.2mm Nozzle
-
-Not yet calibrated. See [outstanding calibrations](../procedures/calibration.md#outstanding-calibrations).
-
 ## Calibrated Values - 0.4mm Nozzle
 
-Not yet calibrated. See [outstanding calibrations](../procedures/calibration.md#outstanding-calibrations).
+| Setting | Value |
+|---|---|
+| Nozzle | **250°C** |
+| Flow ratio | 0.95 |
+| Pressure advance | 0.06 |
+| Retraction length | 0.xx mm |
+| Retraction speed | xx mm/s |
+| Max volumetric flow | 12 mm³/s |
 
 ## Notes
 

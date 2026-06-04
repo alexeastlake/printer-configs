@@ -26,3 +26,4 @@
 ## Maintenance Notes
 
 - Clean PEI bed with IPA periodically
+- v11 hotend board

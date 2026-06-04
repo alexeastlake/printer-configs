@@ -9,7 +9,7 @@ Personal reference repo for my 3D printing setup: printer details, filament conf
 | **Printer** | Creality K1C (enclosed CoreXY, 220mm × 220mm × 250mm) |
 | **Nozzles** | 0.4mm, 0.2mm |
 | **Slicer** | OrcaSlicer (primary), Creality Print (monitoring) |
-| **Active filaments** | Creality Ender PLA+ Black, Creality CR-PETG Black |
+| **Current Primary Filaments** | Creality CR-PETG Black, Creality Ender PLA+ Black |
 
 ## Repository Layout
 
